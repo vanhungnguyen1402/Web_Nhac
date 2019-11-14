@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nhạc trẻ - Erik</title>
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<link rel="icon" href="../../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+<script src="../../js/javascript.js"></script>
+</head>
+<body>
+	<div id="outer">
+		<div id="nava">
+			<nav>
+				<ul>
+					<li id="Home"><a href="../../index.html"><span id="stylehome">NHACMP3</span></a></li>
+					<li><a href="#">BXH <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Chủ đề <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub" id="sub2">
+							<li ><a href="#">Thư giãn</a> </li>
+							<li><a href="#">EDM</a></li>
+							<li style="clear: left"><a href="#">Acoustic</a></li>
+							<li><a href="#">Hot</a></li>
+							<li style="clear: left"><a href="#">Hit</a> </li>
+							<li><a href="#">Trữ tình</a></li>
+							<li style="clear: left"><a href="#">Dream pop</a></li>
+							<li><a href="#">Beat</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Album <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nghệ sĩ</a></li>
+					<li><a href="#">Khám phá</a></li>
+					<li><a href="#">Bài hát <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<!-- <li id="searchboxx">
+						<button id="buttonsearch" onclick="Nutsearch()"></button>
+						SEARCH <span style="zoom: 80%"><i class="down"></i></span>
+						<ul style="margin-left: -130px;display: none;animation: abc 0.5s" class="subs">
+							<li>
+								<div id="searchbox">
+									<div id="tim">
+										<input type="text" name="Search" placeholder="Search" id="timkiem">
+										<input type="button" value="Search">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li> -->
+				</ul>
+			</nav>
+			<div id="navv">
+				<ul id="dndk">
+					<li style="width: 110px"> <a href="#">Cá nhân <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li><a href="../../trangcon/login.html">Đăng nhập</a></li>
+							<li><a href="../../trangcon/register.html">Đăng Kí</a></li>
+							<li><a href="../../index.html">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="sectionside">
+			<section>
+				<article id="mainmain">
+					<div>
+                        <div id="mainplayer">
+							<span style="font-size: 25px;color:#164954">Nhạc trẻ</span> <span style="width: 720px">- Erik</span>
+							<span style="padding-left: 50px;">Bài hát đang phát: </span><span id="stt">1 </span>
+							<div>
+									<div id="khungplayer">
+										<h2 id="tenbaihat">Bài hát 1</h2>
+										<h3 id="tencasi" style="padding-bottom: 18px;">Ca sĩ 1</h3>
+									</div>
+									<button class="nextprev" style="border-left: 1px solid #cacaca;" onclick="prev()">
+										<img src="prev.svg" alt="prev" width="24" style="padding-top: 1px">
+									</button>
+									<button class="nextprev"onclick="next()">
+											<img src="next.svg" alt="next" width="24" style="padding-top: 1px">
+									</button>
+								<audio controls controlsList="nodownload" id="audioaudio">
+									<p>Your browser does not support the audio element.</p>
+									<source src="">
+								</audio>
+							</div>
+						</div>
+					</div>
+					<div id="thongtinalbum">
+						<div>
+							<img src="../../image/album/19.jpg" alt="album" height="100px" style="float: left;margin-right: 10px">
+						</div>
+						<div><strong>Thông tin album:</strong>"SAU TẤT CẢ" do ERIK (Thành viên nhóm nhạc nam MONSTAR) thể hiện, được sáng tác và phối khí bởi nhạc sĩ trẻ Khắc Hưng - "cha đẻ" của Hit "Y.Ê.U", ca khúc có giai điệu nhẹ nhàng, sâu lắng với nội dung kể về câu chuyện tình yêu nhiều sóng gió và rồi hai người yêu nhau lại trở về bên nhau. Ca khúc cũng đánh dấu sự trở lại với âm nhạc của ekip ST.319.</div>
+					</div>
+					<script>
+						var tenbh = document.getElementsByClassName("albumdanhsach0");
+						var tencs = document.getElementsByClassName("albumcasi");
+						var nhac = new Audio();
+						var nhacs = ["https://mp3.zing.vn/xhr/media/download-source?type=audio&code=ZHcmtZHNQzpWNBLyZtFmkGtLWbBWhDdvR&sig=b80f776a79f6d26bdea3be19cae33afd","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=ZHJGyknshbCmNQiyZtFmLHTkpFVWCbdcB&sig=d9fc760e4885104ee0512b24da3ebcf0","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=ZHcnykmNWlpJQSJykybHLmykWbBWgbSFk&sig=adb3fe44059c49ced1ef5e3303a61157","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=LHcnTkHsWSRNmpvyLtbmLGyZpDBpXbzWS&sig=f1e90ce780052343478df792f0c4b4c0","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=LmcHTkmsWlsQkbBTkyFnZHtZQvVphDSsC&sig=343a37342e4f5451ecd019757a765cf5","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=LmxHTZmNQbzsLGztkTDHLmyZQbBQgbpdn&sig=7abe01079e42b41e5f426cce7c7bed50","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=LnxGykmNWxsSNglTktbnLmtZWvdQCvpXC&sig=8b00284b5b507c788b279fbc0d64c520","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=ZHJGTkGNXbbQvdkyZTbHLnTkpFBpgbpJR&sig=e608b8f3fedf0a49dae7e9e955f9566d","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=ZHxmyLGsJnbXgdJtZtFmLHTkWbVpCbgvc&sig=91683177ef67779339202f115670ba21","https://mp3.zing.vn/xhr/media/download-source?type=audio&code=LmcmyLmNWxHCVFWtLtFnkmyZpvBWhvXsG&sig=8b733090d4bbec2b2cf9984b15a0a9e0"];
+						function Playnhac(i){
+							// nhac.src = nhacs[i];
+							// nhac.play();
+							document.getElementById("tenbaihat").innerHTML=tenbh[i].innerHTML;
+							document.getElementById("tencasi").innerHTML=tencs[i].innerHTML;
+							document.getElementById("audioaudio").src = nhacs[i];
+							document.getElementById("audioaudio").autoplay="autoplay";
+							document.getElementById("stt").innerHTML = i+1;
+						}
+						function prev(){
+							var stt = document.getElementById("stt").innerHTML;
+							document.getElementById("tenbaihat").innerHTML=tenbh[stt-2].innerHTML;
+							document.getElementById("tencasi").innerHTML=tencs[stt-2].innerHTML;
+							document.getElementById("audioaudio").src = nhacs[stt-2];
+							document.getElementById("audioaudio").autoplay="autoplay";
+							document.getElementById("stt").innerHTML = stt-1;
+						}
+						function next(){
+							var stt = document.getElementById("stt").innerHTML;
+							document.getElementById("tenbaihat").innerHTML=tenbh[stt].innerHTML;
+							document.getElementById("tencasi").innerHTML=tencs[stt].innerHTML;
+							document.getElementById("audioaudio").src = nhacs[stt];
+							document.getElementById("audioaudio").autoplay="autoplay";
+							document.getElementById("stt").innerHTML = parseInt(stt)+1;
+						}
+					</script>
+                        <div id="mediainfo">
+							<table style="border-collapse: collapse">
+                                <tr style="background-color: #cae6e1">
+									<td style="width: 20px">1. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(0);" id="defaultplay">Sau Tất Cả</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr>
+									<td style="width: 20px">2. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(1);">Ghen</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr style="background-color: #cae6e1">
+									<td style="width: 20px">3. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(2);">Mùa Đông</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr>
+									<td style="width: 20px">4. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(3);">Yêu Và Yêu</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr style="background-color: #cae6e1">
+									<td style="width: 20px">5. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(4);">Tôi Là Ai Trong Em</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr>
+									<td style="width: 20px">6. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(5);">I Love You</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr style="background-color: #cae6e1">
+									<td style="width: 20px">7. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(6);">Mẹ Yêu</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr>
+									<td style="width: 20px">8. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(7);">Từ Bỏ</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr style="background-color: #cae6e1">
+									<td style="width: 20px">9. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(8);">Đừng Xin Lỗi Nữa</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                <tr>
+									<td style="width: 20px">10. </td>
+                                    <td class="albumdanhsach0" onClick="Playnhac(9);">Lạc Nhau Có Phải Muôn Đời</td>
+                                    <td style="width: 340px" class="albumcasi">Erik</td>
+                                </tr>
+                                
+                            </table>
+                        </div>
+                        
+                        <div id="bhmore">
+							<h2>VIDEOS BẠN SẼ THÍCH</h2>
+							<div>
+								<div class="thumb" style="margin-left: 0px">
+									<img src="../../image/videos/1.png" alt="" width="160px" height="90px">
+									<span class="thumbtittle">Young and Beautiful</span>
+								</div>
+								<div class="thumb" style="margin-left: 0px">
+									<img src="../../image/videos/2.png" alt="" width="160px" height="90px">
+									<span class="thumbtittle">Sau tất cả</span>
+								</div>
+								<div class="thumb" style="margin-left: 0px">
+									<img src="../../image/videos/3.png" alt="" width="160px" height="90px">
+									<span class="thumbtittle">Tìm</span>
+								</div>
+								<div class="thumb" style="margin-left: 0px">
+									<img src="../../image/videos/4.png" alt="" width="160px" height="90px">
+									<span class="thumbtittle">Làm vợ anh nhé</span>
+								</div>
+							</div>
+                        </div>
+                    
+				</article>
+				<article id="a2">
+						<h2 style="padding: 10px;">NỔI BẬT TRONG TUẦN</h2>
+						<div>
+							<div class="nghesi">
+								<div class="hinh"><a href="#"><img src="../../image/album/1.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+								
+								<div class="titlehinh"> Various Artists </div>
+							</div>
+							<div class="nghesi">
+								<div class="hinh"> <a href="#"><img src="../../image/album/2.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+								<div class="titlehinh"> Various Artists </div>
+							</div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="#"><img src="../../image/album/3.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh"> Ed Sheeran </div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="#"><img src="../../image/album/4.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh"> Britney Spears </div>
+						</div>
+						<div class="nghesi" >
+							<div class="hinh"> <a href="#"><img src="../../image/album/5.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh"> Lana Del Rey </div>
+						</div>
+				</article>
+			</section>
+			<aside>
+				<div style="margin-bottom: 10px">
+					<h2>LIÊN QUAN</h2>
+				</div>
+				<div>
+					<ul>
+						<li class="bxh">
+								<div class="thuhang">
+										<strong>01</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Young and Beautiful </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div class="thuhang">
+								<strong>02</strong>
+							</div>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									<a href="#">All Falls Down </a>
+								</div>
+								<a href="#">
+								<div style="height: 25px;font-size: smaller; color: #464545">
+									Alan Walker, Noah Cyrus
+								</div>
+								</a>
+								<div style="height: 25px;font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div class="thuhang">
+								<strong>03</strong>
+							</div>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									<a href="#">Never Be The Same </a>
+								</div>
+								<a href="#">
+								<div style="height: 25px;font-size: smaller; color: #464545">
+									Camila Cabello
+								</div>
+								</a>
+								<div style="height: 25px;font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div class="thuhang">
+								<strong>04</strong>
+							</div>
+							<a href="#">
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									The Middle
+								</div>
+								<div style="height: 25px;font-size: smaller; color: #464545">
+									Zedd, Maren Morris, Grey
+								</div>
+							</div>
+							</a>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px;font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+								<strong>05</strong>
+							</div>
+							<a href="#">
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									For You
+								</div>
+								<div style="height: 25px; font-size: smaller; color: #464545">
+									Nobody
+								</div>
+							</div>
+							</a>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px; font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h2 style="margin: 30px 0 10px 0">BẢNG XẾP HẠNG</h2>
+					<div>
+						<button class="tablinks" onclick="opentab(event,'VN')" id="defaultOpen">Việt Nam</button>
+						<button class="tablinks" onclick="opentab(event,'NN')">Nước ngoài</button>
+					</div>
+					<div class="tabcontent" id="VN">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Young and Beautiful </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Lana Del Rey
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+									<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									</a>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+									<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									</a>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
+					
+					<div class="tabcontent" id="NN">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Paparazzi </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Lady Gaga
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+									<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									</a>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+									<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									</a>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+					</div>
+				</div>
+			</aside>
+		</div>
+		<footer>
+			<div>
+				<div style="float: left;padding-top: 20px">
+					<p><strong>WITH MUSIC, WE ARE ONE</strong><br>
+						Đại Học Công Nghiệp Thành Phố Hồ Chí Minh<br>
+					</p>
+				</div>
+				<div style="float: left; margin-left: 10px">
+					<a href="#"><img src="../../aa.svg" alt="" height="79px" style="margin-top: 5px;float: left;"></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		document.getElementById("defaultOpen").click();
+		document.getElementById("defaultplay").click();
+		document.getElementById("audioaudio").pause();
+	</script>
+</body>
+</html>

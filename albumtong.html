@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang chủ</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/javascript.js"></script>
+</head>
+<body>
+	<div id="outer">
+		<div id="nava">
+			<nav>
+				<ul>
+					<li id="Home"><a href="index.html"><span id="stylehome">NHACMP3</span></a></li>
+					<li><a href="trangcon/bxh.html">BXH</a>
+					</li>
+					<li><a href="#">Chủ đề <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub" id="sub2">
+							<li><a href="#">Thư giãn</a> </li>
+							<li><a href="#">EDM</a></li>
+							<li style="clear: left"><a href="#">Acoustic</a></li>
+							<li><a href="#">Hot</a></li>
+							<li style="clear: left"><a href="#">Hit</a> </li>
+							<li><a href="#">Trữ tình</a></li>
+							<li style="clear: left"><a href="#">Dream pop</a></li>
+							<li><a href="#">Beat</a></li>
+							<!-- <div style="width: 200px;height: 160px;background-color: #a6ccc6;">
+								<ul>
+									<li><a href="#">Pop</a></li>
+									<li><a href="#">Thư giãn</a></li>
+									<li style="width: 200px"><a href="#">Lana Del Rey</a></li>
+									<li><a href="#">EDM</a></li>
+									<li><a href="#">Dream</a></li>
+									<li><a href="#">Soundtrack</a></li>
+									<li><a href="#">RAP</a></li>
+								</ul>
+							</div> -->
+						</ul>
+					</li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Album <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nghệ sĩ</a></li>
+					<li><a href="#">Khám phá</a></li>
+					<li><a href="#">Bài hát <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li id="searchboxx">
+						<button id="buttonsearch" onclick="Nutsearch()"></button>
+						SEARCH <span style="zoom: 80%"><i class="down"></i></span>
+						<ul style="margin-left: -110px;display: none;animation: abc 0.5s" class="subsub">
+							<li>
+								<div id="searchbox">
+									<div id="tim">
+										<input type="text" name="Search" placeholder="Search" id="timkiem">
+										<input type="button" value="Search">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div id="navv">
+				<ul id="dndk">
+					<li style="width: 110px"> <a href="#">Cá nhân <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li><a href="trangcon/login.html">Đăng nhập</a></li>
+							<li><a href="trangcon/register.html">Đăng Kí</a></li>
+							<li><a href="index.html">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="sectionside">
+		  <section>
+				
+				<article id="anext">
+					<h2 style="padding: 10px;">VIỆT NAM </h2>
+						<div class="nghesi">
+							<div class="hinh"><a href="trangcon/album/nhactre_sontung.html"><img src="image/album/26.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+							
+							<div class="titlehinh">  Nơi Này Có Anh</div>
+							<div class="titlehinhcs"> Sơn Tùng </div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/album1.html"><img src="image/album/19.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">Sau Tất Cả</div>
+							<div class="titlehinhcs"> Erik </div>
+						</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="trangcon/album/album2.html"><img src="image/album/20.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh">Trót Yêu</div>
+						<div class="titlehinhcs"> Trung Quân </div>
+					</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="#"><img src="image/album/27.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh"> Lắng Nghe Nước Mắt </div>
+						<div class="titlehinhcs"> Mr Siro </div>
+					</div>
+					<div class="nghesi" >
+						<div class="hinh"> <a href="#"><img src="image/album/25.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh"> Vợ Người Ta </div>
+						<div class="titlehinhcs"> Phan Mạnh Quỳnh </div>
+					</div>
+			</article>
+				
+				<article id="anext">
+						<h2 style="padding: 10px;">US-UK</h2>
+							<div class="nghesi">
+								<div class="hinh"><a href="trangcon/album/album4.html"><img src="image/album/40.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+								
+								<div class="titlehinh"> Attention </div>
+								<div class="titlehinhcs">Charlie Puth </div>
+							</div>
+							<div class="nghesi">
+								<div class="hinh"> <a href="trangcon/album/nhactre_JustinBieber.html"><img src="image/album/28.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+								<div class="titlehinh"> What do you mean </div>
+								<div class="titlehinhcs">Justin Bieber </div>
+							</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/album6.html"><img src="image/album/24.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">ALan Walker - EP </div>
+							<div class="titlehinhcs"> Alan Walker </div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/album7.html"><img src="image/album/UntilYou.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">Until You</div>
+							<div class="titlehinhcs">Shayne Ward</div>
+						</div>
+                        <div class="nghesi">
+							<div class="hinh"><a href="trangcon/album/btd.html"><img src="image/album/5.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+							
+							<div class="titlehinh"> Born to Die </div>
+							<div class="titlehinhcs"> Lana Del Rey </div>
+						</div>
+						
+				</article>
+                <article id="anext">
+					<h2 style="padding: 10px;">K-POP</h2>
+						<div class="nghesi">
+							<div class="hinh"><a href="trangcon/album/nhachan.html"><img src="image/album/22.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+							
+							<div class="titlehinh"> DNA </div>
+							<div class="titlehinhcs"> BTS </div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/nhachan.html"><img src="image/album/41.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">What Is Love</div>
+							<div class="titlehinhcs"> TWICE</div>
+						</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="trangcon/album/nhachan.html"><img src="image/album/42.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh">Flower Road</div>
+						<div class="titlehinhcs"> BIGBANG </div>
+					</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="#"><img src="image/album/43.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh">Day By Day (6th Mini Album) </div>
+						<div class="titlehinhcs"> T-ARA </div>
+					</div>
+					<div class="nghesi" >
+						<div class="hinh"> <a href="#"><img src="image/album/44.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh"> EVERYD4Y </div>
+						<div class="titlehinhcs"> WINNER </div>
+					</div>
+			</article>
+              <article id="anext">
+					<h2 style="padding: 10px;">HÒA TẤU</h2>
+						<div class="nghesi">
+							<div class="hinh"><a href="trangcon/album/nhactre_erik.html"><img src="image/album/45.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+							
+							<div class="titlehinh"> The Garden Of Words OST </div>
+							<div class="titlehinhcs"> Kashiwa Daisuke </div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/album1.html"><img src="image/album/46.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">9 Songs</div>
+							<div class="titlehinhcs"> Kashiwa Daisuke </div>
+						</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="trangcon/album/nhachan.html"><img src="image/album/47.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh">Flower Wind</div>
+						<div class="titlehinhcs"> Sweet Latte </div>
+					</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="#"><img src="image/album/48.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh">Teens</div>
+						<div class="titlehinhcs"> CREPE </div>
+					</div>
+					<div class="nghesi" >
+						<div class="hinh"> <a href="#"><img src="image/album/49.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh"> Uncharted </div>
+						<div class="titlehinhcs"> The Piano Guys </div>
+					</div>
+			</article>
+            
+			</section>
+			<aside>
+			  <div>
+			    <h2 style="margin: 30px 0 10px 0">CHỦ ĐỀ</h2>
+					<div class="chude"> <img src="image/chude/1.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/2.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/3.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/4.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/5.png" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/6.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/7.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/8.jpg" alt="" width="320px" height="94px"> </div>
+				</div>
+			</aside>
+		</div>
+		<footer>
+			<div>
+				<div style="float: left;padding-top: 20px">
+					<p><strong>WITH MUSIC, WE ARE ONE</strong><br>
+						Đại Học Công Nghiệp Thành Phố Hồ Chí Minh<br>
+					</p>
+				</div>
+				<div style="float: left; margin-left: 10px">
+					<img src="aa.svg" alt="" height="79px" style="margin-top: 5px;float: left;">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+			document.getElementsByClassName("demo")[0].click();
+
+			setInterval(function(){
+				nextslide();
+			},4000);
+
+			var defaultOpen = document.getElementsByClassName("defaultOpen");
+			for (var i in defaultOpen) {
+				defaultOpen[i].click();
+			}
+
+	</script>
+</body>
+</html>

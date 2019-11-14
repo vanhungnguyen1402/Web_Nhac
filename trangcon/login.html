@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Đăng Nhập</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/jquery.validate.min.js"></script>
+<script src="../js/javascript.js"></script>
+</head>
+<body>
+	<div id="outer">
+		<!-- <header>
+			<div style="float: left; margin-right: 554px">
+				<a href="#" style="color: white">NHACMP3</a>
+			</div>
+			<div id="tim">
+				<input type="text" name="Search" placeholder="Search" id="timkiem">
+				<input type="button" value="Search">
+			</div>
+		</header> -->
+		<div id="nava">
+			<nav>
+				<ul>
+					<li id="Home"><a href="../index.html"><span id="stylehome">NHACMP3</span></a></li>
+					<li><a href="#">BXH <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Chủ đề <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub" id="sub2">
+							<li ><a href="#">Thư giãn</a> </li>
+							<li><a href="#">EDM</a></li>
+							<li style="clear: left"><a href="#">Acoustic</a></li>
+							<li><a href="#">Hot</a></li>
+							<li style="clear: left"><a href="#">Hit</a> </li>
+							<li><a href="#">Trữ tình</a></li>
+							<li style="clear: left"><a href="#">Dream pop</a></li>
+							<li><a href="#">Beat</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Album <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nghệ sĩ</a></li>
+					<li><a href="#">Khám phá</a></li>
+					<li><a href="#">Bài hát <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<!-- <li id="searchboxx">
+						<button id="buttonsearch" onclick="Nutsearch()"></button>
+						SEARCH <span style="zoom: 80%"><i class="down"></i></span>
+						<ul style="margin-left: -130px;display: none;animation: abc 0.5s" class="subs">
+							<li>
+								<div id="searchbox">
+									<div id="tim">
+										<input type="text" name="Search" placeholder="Search" id="timkiem">
+										<input type="button" value="Search">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li> -->
+				</ul>
+			</nav>
+			<div id="navv">
+				<ul id="dndk">
+					<li style="width: 110px">
+						<a href="#">Cá nhân <span style="zoom: 80%"><i class="down"></i></span></a>
+							<ul class="sub">
+								<li><a href="login.html">Đăng nhập</a> </li>
+								<li><a href="register.html">Đăng Kí</a></li>
+								<li><a href="../index.html">Logout</a></li>
+							</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<div id="sectionside">
+			<section id="ddnn">
+				<article id="dangnhap" style="border-bottom: 1px solid slategrey;">
+                    <form name="dnhap">
+                        <table>
+							<tr>
+								<td colspan="2">
+									<H2 style="padding-left: 170px">ĐĂNG NHẬP:</H2>
+								</td>
+							</tr>
+                            <tr>
+                                <td>Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> 
+                                <td><input type="text" name="tendangnhap" id="tendangnhap"></td> 
+                            </tr>
+                            <tr>
+                                    <td>Password:</td>
+                                    <td><input type="password" name="password" id="password"></td>
+                            </tr>
+                            <tr>
+                                    <td colspan="2" style="padding-left: 100px;"><input type="submit" value="LOGIN" style="margin-left: 110px"></td>
+                            </tr>
+                        </table>
+                    </form>
+				</article>
+				<article id="dangki">
+					<form name="dki">
+						<table>
+							
+							<tr>
+								<td colspan="2">
+									<H2 style="padding-left: 170px">ĐĂNG KÍ:</H2>
+								</td>
+							</tr> 
+							
+							<tr>
+								<td>New username:</td>
+								<td><input type="text" name="tendangki" id="tendangki" ></td>
+							</tr>
+							<tr>
+									<td>Email:</td>
+									<td><input type="mail" name="email" id="email" ></td>
+							</tr>
+							<tr>
+									<td>Birthday:</td>
+									<td>
+					<input type="text" placeholder="Ngày" name="ngay" id="ngay"> <br>
+					<select name="thang" id="chonthang" style="width: 258px;">
+						<option value="1">Tháng 1</option>
+						<option value="2">Tháng 2</option>
+						<option value="3">Tháng 3</option>
+						<option value="4">Tháng 4</option>
+						<option value="5">Tháng 5</option>
+						<option value="6">Tháng 6</option>
+						<option value="7">Tháng 7</option>
+						<option value="8">Tháng 8</option>
+						<option value="9">Tháng 9</option>
+						<option value="10">Tháng 10</option>
+						<option value="11">Tháng 11</option>
+						<option value="12">Tháng 12</option>
+					</select><br>
+					<input type="text" placeholder="Năm" name="nam" id="nam">
+				</td>
+							</tr>
+							<tr style="height: 40px;">
+									<td>Gender:</td>
+									<td>
+										<input value="Nam" type="radio" name="gt" checked> Nam
+										<input value="Nữ" type="radio" name="gt" style="margin-left: 80px"> Nữ
+									</td>
+							</tr>
+							<tr>
+									<td>New password:</td>
+									<td><input type="password" name="pass" id="pa"></td>
+							</tr>
+							<tr>
+									<td>Repassword:</td>
+									<td><input type="password" name="repass" id="repa"></td>
+							</tr>
+							<tr style="height: 40px;">
+									<td colspan="2" style="padding-left: px"><input type="checkbox" name="dieukhoan" id="" checked>&nbsp; Khi đăng kí, bạn chấp nhận điều khoản của chúng tôi </td>
+							</tr>
+							<tr>
+									<td colspan="2" style="padding-left: 80px;"><input type="submit" value="REGISTER" style="margin-left: 100px" id="nutdk"></td>
+							</tr>
+						</table>
+					</form>
+				</article>
+			</section>
+		</div>
+		<footer>
+			<div>
+				<div style="float: left;padding-top: 20px">
+					<p><strong>WITH MUSIC, WE ARE ONE</strong><br>
+						Đại Học Công Nghiệp Thành Phố Hồ Chí Minh<br>
+					</p>
+				</div>
+				<div style="float: left; margin-left: 10px">
+					<img src="../aa.svg" alt="" height="79px" style="margin-top: 5px;float: left;">
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>

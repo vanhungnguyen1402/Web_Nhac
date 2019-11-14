@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bảng xếp hạng</title>
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<div id="outer">
+		<div id="nava">
+			<nav>
+				<ul>
+					<li id="Home"><a href="../index.html"><span id="stylehome">NHACMP3</span></a></li>
+					<li><a href="#">BXH <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Chủ đề <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub" id="sub2">
+							<li ><a href="#">Thư giãn</a> </li>
+							<li><a href="#">EDM</a></li>
+							<li style="clear: left"><a href="#">Acoustic</a></li>
+							<li><a href="#">Hot</a></li>
+							<li style="clear: left"><a href="#">Hit</a> </li>
+							<li><a href="#">Trữ tình</a></li>
+							<li style="clear: left"><a href="#">Dream pop</a></li>
+							<li><a href="#">Beat</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Album <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nghệ sĩ</a></li>
+					<li><a href="#">Khám phá</a></li>
+					<li><a href="#">Bài hát <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<!-- <li id="searchboxx">
+						<button id="buttonsearch" onclick="Nutsearch()"></button>
+						SEARCH <span style="zoom: 80%"><i class="down"></i></span>
+						<ul style="margin-left: -130px;display: none;animation: abc 0.5s" class="subs">
+							<li>
+								<div id="searchbox">
+									<div id="tim">
+										<input type="text" name="Search" placeholder="Search" id="timkiem">
+										<input type="button" value="Search">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li> -->
+				</ul>
+			</nav>
+			<div id="navv">
+				<ul id="dndk">
+					<li style="width: 110px"> <a href="#">Cá nhân <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li><a href="../trangcon/login.html">Đăng nhập</a></li>
+							<li><a href="../trangcon/register.html">Đăng Kí</a></li>
+							<li><a href="../index.html">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="sectionside">
+			<section>
+				<h2>BẢNG XẾP HẠNG</h2>
+				<div id="ql">
+					<button class="tablon defaultOpen" onclick="opentab(event, 'vina', 'tablon', 'tabcontentlon')">VIỆT NAM</button>
+					<button class="tablon" onclick="opentab(event, 'usuk', 'tablon', 'tabcontentlon')">US-UK</button>
+					<button class="tablon" onclick="opentab(event, 'hqhq', 'tablon', 'tabcontentlon')">HÀN QUỐC</button>
+				</div>
+                <div class="tabcontentlon" id="vina">
+					<div>
+						<button class="tablinks defaultOpen" onclick="opentab(event,'bhvn','tablinks','tabcontent')">Bài Hát</button>
+                        <button class="tablinks" onclick="opentab(event,'abvn','tablinks','tabcontent')">Albums</button>
+                        <button class="tablinks" onclick="opentab(event,'vivn','tablinks','tabcontent')">Videos</button>
+					</div>
+					<div class="tabcontent" id="bhvn">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Young and Beautiful </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Lana Del Rey
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+									<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									</a>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+									<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									</a>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+										<li class="bxh">
+												<div class="thuhang">
+														<strong>06</strong>
+													</div>
+													<div style="width: auto;float: left;height: 50px;float: left;">
+														<div style="height: 25px">
+															<a href="#">Young and Beautiful </a>
+														</div>
+														<a href="#">
+														<div style="height: 25px;font-size: smaller; color: #464545">
+															Lana Del Rey
+														</div>
+														</a>
+														<div style="height: 25px;font-size: smaller; color: #464545">
+														</div>
+													</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>07</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">All Falls Down </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Alan Walker, Noah Cyrus
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>08</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Never Be The Same </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Camila Cabello
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>09</strong>
+											</div>
+											<a href="#">
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													The Middle
+												</div>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Zedd, Maren Morris, Grey
+												</div>
+											</div>
+											</a>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+												<strong>10</strong>
+											</div>
+											<a href="#">
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													For You
+												</div>
+												<div style="height: 25px; font-size: smaller; color: #464545">
+													Nobody
+												</div>
+											</div>
+											</a>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px; font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+						</ul>
+					</div>
+					
+					<div class="tabcontent" id="abvn">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+                                        </div>
+                                        <div>
+                                            <img src="../image/album/1.jpg" alt="123" class="bxhalbumimg">
+                                        </div>
+                                        <div style="width: auto;float: left;height: 50px;float: left;">
+                                            <div style="height: 25px">
+                                                <a href="#">Paparazzi </a>
+                                            </div>
+                                            <a href="#">
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                                Lady Gaga
+                                            </div>
+                                            </a>
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                            </div>
+                                        </div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/23.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/28.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/5.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/DemNgayXaEm.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+                    </div>
+                    
+                    <div class="tabcontent" id="vivn">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+                                        </div>
+                                        <div>
+                                            <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                        </div>
+                                        <div style="width: auto;float: left;height: 50px;float: left;">
+                                            <div style="height: 25px">
+                                                <a href="#">Paparazzi </a>
+                                            </div>
+                                            <a href="#">
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                                Lady Gaga
+                                            </div>
+                                            </a>
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                            </div>
+                                        </div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+                    </div>
+                </div>
+                <div class="tabcontentlon" id="usuk">
+					<div>
+						<button class="bxhnnnut defaultOpen" onclick="opentab(event,'bhus','bxhnnnut','bxhds')">Bài Hát</button>
+                        <button class="bxhnnnut" onclick="opentab(event,'abus','bxhnnnut','bxhds')">Albums</button>
+                        <button class="bxhnnnut" onclick="opentab(event,'vius','bxhnnnut','bxhds')">Videos</button>
+					</div>
+					<div class="bxhds" id="bhus">
+						<ul>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: blue">01</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: brown">02</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: yellow">03</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>04</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>05</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>06</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>07</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>08</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>09</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>10</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="bxhds" id="abus">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+                                        </div>
+                                        <div>
+                                            <img src="../image/album/1.jpg" alt="123" class="bxhalbumimg">
+                                        </div>
+                                        <div style="width: auto;float: left;height: 50px;float: left;">
+                                            <div style="height: 25px">
+                                                <a href="#">Paparazzi </a>
+                                            </div>
+                                            <a href="#">
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                                Lady Gaga
+                                            </div>
+                                            </a>
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                            </div>
+                                        </div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/23.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/28.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/5.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/DemNgayXaEm.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+                    </div>
+                    
+                    <div class="bxhds" id="vius">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+                                        </div>
+                                        <div>
+                                            <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                        </div>
+                                        <div style="width: auto;float: left;height: 50px;float: left;">
+                                            <div style="height: 25px">
+                                                <a href="#">Paparazzi </a>
+                                            </div>
+                                            <a href="#">
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                                Lady Gaga
+                                            </div>
+                                            </a>
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                            </div>
+                                        </div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+                    </div>
+                </div>
+                <div class="tabcontentlon" id="hqhq">
+					<div>
+						<button class="bxhnnnuthq defaultOpen" onclick="opentab(event,'bhhq','bxhnnnuthq','bxhdshq')">Bài Hát</button>
+                        <button class="bxhnnnuthq" onclick="opentab(event,'abhq','bxhnnnuthq','bxhdshq')">Albums</button>
+                        <button class="bxhnnnuthq" onclick="opentab(event,'vihq','bxhnnnuthq','bxhdshq')">Videos</button>
+					</div>
+					<div class="bxhdshq" id="bhhq">
+						<ul>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: blue">01</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: brown">02</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong style="color: yellow">03</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>04</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>05</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>06</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Young and Beautiful </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>07</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">All Falls Down </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>08</strong>
+								</div>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px">
+										<a href="#">Never Be The Same </a>
+									</div>
+									<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+									</a>
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div class="thuhang">
+									<strong>09</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px;font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+							<hr>
+							<li class="bxh">
+								<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+									<strong>10</strong>
+								</div>
+								<a href="#">
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+								</a>
+								<div style="width: auto;float: left;height: 50px;float: left;">
+									<div style="height: 25px; font-size: smaller; color: #464545">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="bxhdshq" id="abhq">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+                                        </div>
+                                        <div>
+                                            <img src="../image/album/1.jpg" alt="123" class="bxhalbumimg">
+                                        </div>
+                                        <div style="width: auto;float: left;height: 50px;float: left;">
+                                            <div style="height: 25px">
+                                                <a href="#">Paparazzi </a>
+                                            </div>
+                                            <a href="#">
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                                Lady Gaga
+                                            </div>
+                                            </a>
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                            </div>
+                                        </div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/23.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/28.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/5.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/album/DemNgayXaEm.jpg" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+                    </div>
+                    
+                    <div class="bxhdshq" id="vihq">
+						<ul>
+								<li class="bxh">
+										<div class="thuhang">
+												<strong style="color: blue">01</strong>
+                                        </div>
+                                        <div>
+                                            <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                        </div>
+                                        <div style="width: auto;float: left;height: 50px;float: left;">
+                                            <div style="height: 25px">
+                                                <a href="#">Paparazzi </a>
+                                            </div>
+                                            <a href="#">
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                                Lady Gaga
+                                            </div>
+                                            </a>
+                                            <div style="height: 25px;font-size: smaller; color: #464545">
+                                            </div>
+                                        </div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: brown">02</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">All Falls Down </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Alan Walker, Noah Cyrus
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong style="color: yellow">03</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Never Be The Same </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Camila Cabello
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div class="thuhang">
+										<strong>04</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											The Middle
+										</div>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Zedd, Maren Morris, Grey
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+								<hr>
+								<li class="bxh">
+									<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+										<strong>05</strong>
+									</div>
+                                    <div>
+                                        <img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+                                    </div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											For You
+										</div>
+										<div style="height: 25px; font-size: smaller; color: #464545">
+											Nobody
+										</div>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px; font-size: smaller; color: #464545">
+										</div>
+									</div>
+								</li>
+							</ul>
+                    </div>
+				</div>
+            </section>
+			<aside>
+				<div style="margin-bottom: 10px">
+					<h2>LIÊN QUAN</h2>
+				</div>
+				<div>
+					<ul>
+						<li class="bxh">
+								<div class="thuhang">
+										<strong>01</strong>
+									</div>
+									<div style="width: auto;float: left;height: 50px;float: left;">
+										<div style="height: 25px">
+											<a href="#">Young and Beautiful </a>
+										</div>
+										<a href="#">
+										<div style="height: 25px;font-size: smaller; color: #464545">
+											Lana Del Rey
+										</div>
+										</a>
+										<div style="height: 25px;font-size: smaller; color: #464545">
+										</div>
+									</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div class="thuhang">
+								<strong>02</strong>
+							</div>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									<a href="#">All Falls Down </a>
+								</div>
+								<a href="#">
+								<div style="height: 25px;font-size: smaller; color: #464545">
+									Alan Walker, Noah Cyrus
+								</div>
+								</a>
+								<div style="height: 25px;font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div class="thuhang">
+								<strong>03</strong>
+							</div>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									<a href="#">Never Be The Same </a>
+								</div>
+								<a href="#">
+								<div style="height: 25px;font-size: smaller; color: #464545">
+									Camila Cabello
+								</div>
+								</a>
+								<div style="height: 25px;font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div class="thuhang">
+								<strong>04</strong>
+							</div>
+							<a href="#">
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									The Middle
+								</div>
+								<div style="height: 25px;font-size: smaller; color: #464545">
+									Zedd, Maren Morris, Grey
+								</div>
+							</div>
+							</a>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px;font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+						<hr>
+						<li class="bxh">
+							<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+								<strong>05</strong>
+							</div>
+							<a href="#">
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px">
+									For You
+								</div>
+								<div style="height: 25px; font-size: smaller; color: #464545">
+									Nobody
+								</div>
+							</div>
+							</a>
+							<div style="width: auto;float: left;height: 50px;float: left;">
+								<div style="height: 25px; font-size: smaller; color: #464545">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</aside>
+		</div>
+		<footer>
+			<div>
+				<div style="float: left;padding-top: 20px">
+					<p><strong>WITH MUSIC, WE ARE ONE</strong><br>
+						Đại Học Công Nghiệp Thành Phố Hồ Chí Minh<br>
+					</p>
+				</div>
+				<div style="float: left; margin-left: 10px">
+					<a href="#"><img src="../../aa.svg" alt="" height="79px" style="margin-top: 5px;float: left;"></a>
+				</div>
+			</div>
+		</footer>
+    </div>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+    <script>
+        var defaultOpen = document.getElementsByClassName("defaultOpen");
+        for(var i in defaultOpen) {
+            defaultOpen[i].click();
+        }
+	</script>
+</body>
+</html>

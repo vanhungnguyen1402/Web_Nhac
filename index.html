@@ -1,0 +1,595 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Trang chủ</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/javascript.js"></script>
+</head>
+<body>
+	<div id="outer">
+		<div id="nava">
+			<nav>
+				<ul>
+					<li id="Home"><a href="index.html"><span id="stylehome">NHACMP3</span></a></li>
+					<li><a href="trangcon/bxh.html">BXH</a>
+					</li>
+					<li><a href="#">Chủ đề <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub" id="sub2">
+							<li><a href="#">Thư giãn</a> </li>
+							<li><a href="#">EDM</a></li>
+							<li style="clear: left"><a href="#">Acoustic</a></li>
+							<li><a href="#">Hot</a></li>
+							<li style="clear: left"><a href="#">Hit</a> </li>
+							<li><a href="#">Trữ tình</a></li>
+							<li style="clear: left"><a href="#">Dream pop</a></li>
+							<li><a href="#">Beat</a></li>
+							<!-- <div style="width: 200px;height: 160px;background-color: #a6ccc6;">
+								<ul>
+									<li><a href="#">Pop</a></li>
+									<li><a href="#">Thư giãn</a></li>
+									<li style="width: 200px"><a href="#">Lana Del Rey</a></li>
+									<li><a href="#">EDM</a></li>
+									<li><a href="#">Dream</a></li>
+									<li><a href="#">Soundtrack</a></li>
+									<li><a href="#">RAP</a></li>
+								</ul>
+							</div> -->
+						</ul>
+					</li>
+					<li><a href="#">Videos</a></li>
+					<li><a href="#">Album <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Nghệ sĩ</a></li>
+					<li><a href="#">Khám phá</a></li>
+					<li><a href="#">Bài hát <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li style="clear: left"><a href="#">Việt Nam</a></li>
+							<li style="clear: left"><a href="#">Âu Mĩ</a></li>
+							<li style="clear: left"><a href="#">Hàn Quốc</a></li>
+						</ul>
+					</li>
+					<li id="searchboxx">
+						<button id="buttonsearch" onclick="Nutsearch()"></button>
+						SEARCH <span style="zoom: 80%"><i class="down"></i></span>
+						<ul style="margin-left: -110px;display: none;animation: abc 0.5s" class="subsub">
+							<li>
+								<div id="searchbox">
+									<div id="tim">
+										<input type="text" name="Search" placeholder="Search" id="timkiem">
+										<input type="button" value="Search">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div id="navv">
+				<ul id="dndk">
+					<li style="width: 110px"> <a href="#">Cá nhân <span style="zoom: 80%"><i class="down"></i></span></a>
+						<ul class="sub">
+							<li><a href="trangcon/login.html">Đăng nhập</a></li>
+							<li><a href="trangcon/register.html">Đăng Kí</a></li>
+							<li><a href="index.html">Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="sectionside">
+			<section>
+				<article id="a1">
+					<div id="banner1">
+						<div class="imggg"> <a target="_blank" href="https://quanghuy1242.wordpress.com/"><img src="image/1.png" alt="" width="710px" height="300px"></a> </div>
+						<div class="imggg"> <a target="_blank" href="https://quanghuy1242.wordpress.com/"><img src="image/2.png" alt="" width="710px" height="300px"></a> </div>
+						<div class="imggg"> <a target="_blank" href="https://quanghuy1242.wordpress.com/"><img src="image/3.png" alt="" width="710px" height="300px"></a> </div>
+						<div class="imggg"> <a target="_blank" href="https://quanghuy1242.wordpress.com/"><img src="image/4.png" alt="" width="710px" height="300px"></a> </div>
+						<div class="imggg"> <a target="_blank" href="https://quanghuy1242.wordpress.com/"><img src="image/5.png" alt="" width="710px" height="300px"></a> </div>
+					</div>
+					<button onclick="nextslide()" id="nextslidehtml" style="display: none">></button>
+					<div>
+						<div class="smallbaner"> <img src="image/1.png" alt="" width="132px" height="56px" onclick="currentSlide(1)" class="demo"> </div>
+						<div class="smallbaner"> <img src="image/2.png" alt="" width="132px" height="56px" onclick="currentSlide(2)" class="demo"> </div>
+						<div class="smallbaner"> <img src="image/3.png" alt="" width="132px" height="56px" onclick="currentSlide(3)" class="demo"> </div>
+						<div class="smallbaner"> <img src="image/4.png" alt="" width="132px" height="56px" onclick="currentSlide(4)" class="demo"> </div>
+						<div class="smallbaner"> <img src="image/5.png" alt="" width="132px" height="56px" onclick="currentSlide(5)" class="demo"> </div>
+					</div>
+				</article>
+				<article id="anext">
+					<h2 style="padding: 10px;">NỔI BẬT TRONG TUẦN</h2>
+						<div class="nghesi">
+							<div class="hinh"><a href="trangcon/album/btd.html"><img src="image/album/5.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+							
+							<div class="titlehinh"> Born to Die </div>
+							<div class="titlehinhcs"> Lana Del Rey </div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/album1.html"><img src="image/album/19.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">Sau Tất Cả</div>
+							<div class="titlehinhcs"> Erik </div>
+						</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="trangcon/album/album2.html"><img src="image/album/20.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh">Trót Yêu</div>
+						<div class="titlehinhcs"> Trung Quân </div>
+					</div>
+					<div class="nghesi">
+						<div class="hinh"> <a href="#"><img src="image/album/21.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh"> Reputation </div>
+						<div class="titlehinhcs"> Taylor Swift </div>
+					</div>
+					<div class="nghesi" >
+						<div class="hinh"> <a href="#"><img src="image/album/lustforlife.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+						<div class="titlehinh"> Lust for Life </div>
+						<div class="titlehinhcs"> Lana Del Rey </div>
+					</div>
+			</article>
+				
+				<article id="anext">
+						<h2 style="padding: 10px;">ALBUM</h2>
+							<div class="nghesi">
+								<div class="hinh"><a href="trangcon/album/album4.html"><img src="image/album/22.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a></div>
+								
+								<div class="titlehinh"> DNA </div>
+								<div class="titlehinhcs">BTS </div>
+							</div>
+							<div class="nghesi">
+								<div class="hinh"> <a href="trangcon/album/album5.html"><img src="image/album/23.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+								<div class="titlehinh"> Khúc Tình xưa </div>
+								<div class="titlehinhcs">Lệ Quyên </div>
+							</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/album6.html"><img src="image/album/24.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">ALan Walker - EP </div>
+							<div class="titlehinhcs"> Alan Walker </div>
+						</div>
+						<div class="nghesi">
+							<div class="hinh"> <a href="trangcon/album/album7.html"><img src="image/album/25.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh">Vợ Người Ta</div>
+							<div class="titlehinhcs">Phan Mạnh Quỳnh</div>
+						</div>
+						<div class="nghesi" >
+							<div class="hinh"> <a href="#"><img src="image/album/26.jpg" alt="" width="134px" height="134px"><img src="play.svg" alt="" class="smallplay"></a> </div>
+							<div class="titlehinh"> Tuyển tập bài hát hay nhất của Sơn Tùng M-TP </div>
+							<div class="titlehinhcs">Sơn Tùng MTP </div>
+						</div>
+				</article>
+				<article id="ds">
+					<div id="khung1">
+						<a href="#"><h2 style="margin-bottom: 10px;">ĐANG HOT </h2></a>
+						<ul>
+							<li class="nhacds"> <a href="trangcon/baihat/ChacAiDoSeVe.html"><img src="image/album/ChacAiDoSeVe.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Chắc ai đó sẽ về</h3>
+								<span class="nghesids">Sơn Tùng MTP</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>123</span>
+							</li>
+							<li class="nhacds"> <a href="trangcon/baihat/DeEmRoiXa.html"><img src="image/album/DeEmRoiXa.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Để em rời xa</h3>
+								<span class="nghesids">FBBOIZ</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>25</span>
+							</li>
+							<li class="nhacds"> <a href="trangcon/baihat/DemNgayXaEm.html"><img src="image/album/DemNgayXaEm.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Đếm ngày xa em</h3>
+								<span class="nghesids">Only C</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>144</span>
+							</li>
+							<li class="nhacds"> <a href="trangcon/baihat/RollingInTheDeep.html"><img src="image/album/RollingInTheDeep.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Rollimg in the Deep</h3>
+								<span class="nghesids">Adele</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>123</span>
+							</li>
+							<li class="nhacds" style="border-bottom: 0px"> <a href="#"><img src="image/album/14.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Thì Em Vẫn Thế</h3>
+								<span class="nghesids">Tóc Tiên</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>13</span>
+							</li>
+						</ul>
+					</div>
+					<div id="khung2">
+						<h2 style="margin-bottom: 10px;">MỚI NỔI </h2>
+						<ul>
+							<li class="nhacds"> <a href="#"><img src="image/album/15.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Người Lạ Ơi</h3>
+								<span class="nghesids">Karik,Orange,Superbrothers</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>5</span>
+							</li>
+							<li class="nhacds"> <a href="#"><img src="image/album/16.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Mình Cưới Nhau Đi</h3>
+								<span class="nghesids">Huỳnh James,Pjnboys</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>7</span>
+							</li>
+							<li class="nhacds"> <a href="#"><img src="image/album/17.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Trong Trí Nhớ Của Anh</h3>
+								<span class="nghesids">Nguyễn Trần Trung Quân</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>215</span>
+							</li>
+							<li class="nhacds"> <a href="#"><img src="image/album/18.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">BABY I TOLD YOU</h3>
+								<span class="nghesids">MONSTAR</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>33</span>
+							</li>
+							<li class="nhacds" style="border-bottom: 0px"> <a href="#"><img src="image/album/3.jpg" alt="" width="57px" height="57px" class="anhds"><img src="play.svg" alt="" class="smallplayds"></a>
+								<h3 class="tieude">Trash of you and of me</h3>
+								<span class="nghesids">WebeenKnew</span>
+								<span class="luotnghe"><i class="material-icons">headset</i>1</span>
+							</li>
+						</ul>
+					</div>
+				</article>
+			</section>
+			<aside>
+					<div>
+							<h2 style="margin: 5px 0 10px 0">BẢNG XẾP HẠNG VIỆT NAM</h2>
+							<div>
+								<button class="tablinks defaultOpen" onclick="opentab(event,'bhvn','tablinks','tabcontent')">Bài Hát</button>
+								<button class="tablinks" onclick="opentab(event,'abvn','tablinks','tabcontent')">Albums</button>
+								<button class="tablinks" onclick="opentab(event,'vivn','tablinks','tabcontent')">Videos</button>
+							</div>
+							<div class="tabcontent" id="bhvn">
+								<ul>
+										<li class="bxh">
+												<div class="thuhang">
+														<strong style="color: blue">01</strong>
+													</div>
+													<div style="width: auto;float: left;height: 50px;float: left;">
+														<div style="height: 25px">
+															<a href="#">Young and Beautiful </a>
+														</div>
+														<a href="#">
+														<div style="height: 25px;font-size: smaller; color: #464545">
+															Lana Del Rey
+														</div>
+														</a>
+														<div style="height: 25px;font-size: smaller; color: #464545">
+														</div>
+													</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong style="color: brown">02</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">All Falls Down </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Alan Walker, Noah Cyrus
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong style="color: yellow">03</strong>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Never Be The Same </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Camila Cabello
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>04</strong>
+											</div>
+											<a href="#">
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													The Middle
+												</div>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Zedd, Maren Morris, Grey
+												</div>
+											</div>
+											</a>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+												<strong>05</strong>
+											</div>
+											<a href="#">
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													For You
+												</div>
+												<div style="height: 25px; font-size: smaller; color: #464545">
+													Nobody
+												</div>
+											</div>
+											</a>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px; font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+									</ul>
+							</div>
+							
+							<div class="tabcontent" id="abvn">
+								<ul>
+										<li class="bxh">
+												<div class="thuhang">
+														<strong style="color: blue">01</strong>
+												</div>
+												<div>
+													<img src="../image/album/1.jpg" alt="123" class="bxhalbumimg">
+												</div>
+												<div style="width: auto;float: left;height: 50px;float: left;">
+													<div style="height: 25px">
+														<a href="#">Paparazzi </a>
+													</div>
+													<a href="#">
+													<div style="height: 25px;font-size: smaller; color: #464545">
+														Lady Gaga
+													</div>
+													</a>
+													<div style="height: 25px;font-size: smaller; color: #464545">
+													</div>
+												</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong style="color: brown">02</strong>
+											</div>
+											<div>
+												<img src="../image/album/23.jpg" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">All Falls Down </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Alan Walker, Noah Cyrus
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong style="color: yellow">03</strong>
+											</div>
+											<div>
+												<img src="../image/album/28.jpg" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Never Be The Same </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Camila Cabello
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>04</strong>
+											</div>
+											<div>
+												<img src="../image/album/5.jpg" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													The Middle
+												</div>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Zedd, Maren Morris, Grey
+												</div>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+												<strong>05</strong>
+											</div>
+											<div>
+												<img src="../image/album/DemNgayXaEm.jpg" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													For You
+												</div>
+												<div style="height: 25px; font-size: smaller; color: #464545">
+													Nobody
+												</div>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px; font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+									</ul>
+							</div>
+							
+							<div class="tabcontent" id="vivn">
+								<ul>
+										<li class="bxh">
+												<div class="thuhang">
+														<strong style="color: blue">01</strong>
+												</div>
+												<div>
+													<img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+												</div>
+												<div style="width: auto;float: left;height: 50px;float: left;">
+													<div style="height: 25px">
+														<a href="#">Paparazzi </a>
+													</div>
+													<a href="#">
+													<div style="height: 25px;font-size: smaller; color: #464545">
+														Lady Gaga
+													</div>
+													</a>
+													<div style="height: 25px;font-size: smaller; color: #464545">
+													</div>
+												</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong style="color: brown">02</strong>
+											</div>
+											<div>
+												<img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">All Falls Down </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Alan Walker, Noah Cyrus
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong style="color: yellow">03</strong>
+											</div>
+											<div>
+												<img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													<a href="#">Never Be The Same </a>
+												</div>
+												<a href="#">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Camila Cabello
+												</div>
+												</a>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div class="thuhang">
+												<strong>04</strong>
+											</div>
+											<div>
+												<img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													The Middle
+												</div>
+												<div style="height: 25px;font-size: smaller; color: #464545">
+													Zedd, Maren Morris, Grey
+												</div>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px;font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+										<hr>
+										<li class="bxh">
+											<div style="width: 50px;float: left;height: 50px;text-align: center;line-height: 50px">
+												<strong>05</strong>
+											</div>
+											<div>
+												<img src="../image/videos/1.png" alt="123" class="bxhalbumimg">
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px">
+													For You
+												</div>
+												<div style="height: 25px; font-size: smaller; color: #464545">
+													Nobody
+												</div>
+											</div>
+											<div style="width: auto;float: left;height: 50px;float: left;">
+												<div style="height: 25px; font-size: smaller; color: #464545">
+												</div>
+											</div>
+										</li>
+									</ul>
+							</div>
+						</div>
+				<div>
+					<h2 style="margin: 30px 0 10px 0">CHỦ ĐỀ</h2>
+					<div class="chude"> <img src="image/chude/1.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/2.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/3.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/4.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/5.png" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/6.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/7.jpg" alt="" width="320px" height="94px"> </div>
+					<div class="chude"> <img src="image/chude/8.jpg" alt="" width="320px" height="94px"> </div>
+				</div>
+			</aside>
+		</div>
+		<footer>
+			<div>
+				<div style="float: left;padding-top: 20px">
+					<p><strong>WITH MUSIC, WE ARE ONE</strong><br>
+						Đại Học Công Nghiệp Thành Phố Hồ Chí Minh<br>
+					</p>
+				</div>
+				<div style="float: left; margin-left: 10px">
+					<img src="aa.svg" alt="" height="79px" style="margin-top: 5px;float: left;">
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+			document.getElementsByClassName("demo")[0].click();
+
+			setInterval(function(){
+				nextslide();
+			},4000);
+
+			var defaultOpen = document.getElementsByClassName("defaultOpen");
+			for (var i in defaultOpen) {
+				defaultOpen[i].click();
+			}
+
+	</script>
+</body>
+</html>
